@@ -1,0 +1,160 @@
+* {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    background-color:bisque
+}
+
+html {
+    font-size: 16;
+    margin: 0;
+    padding: 0;
+}
+
+/* header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color:coral;
+}
+
+header img {
+    width: 30%;
+    padding: 2rem 15%;
+    background-color: white;
+    border: 2rem solid rgba(0, 0, 0, 0.664);
+}
+
+/* mission statement*/
+
+#mission-statement {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#mission-statement h1 {
+    font-size: 4rem;
+    
+}
+
+#mission-statement p {
+    font-size: 2rem;
+    width: 75%;
+    line-height: 3rem;
+}
+
+#discription {
+    width: 40%;
+}
+
+#contact {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 3rem;
+}
+
+/* services*/
+
+.services {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;  
+    
+}
+
+.services h2 {
+    font-size: 2rem;
+    background-color: orange;
+    margin-bottom: 1rem;
+}
+
+.services img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 1rem;
+}
+
+.justservicepics {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.before-and-after {
+    display: flex;
+    font-size: 2rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+#tree-trimming, #tree-removal, #brush-cleanup, #stump-grinding {
+    margin-top: 3rem;
+}
+
+/* the team*/
+
+
+#teamsection {
+    background-color: ;
+}
+
+#teamsection h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    background-color: coral;
+    margin: 3rem 25%;
+    
+}
+
+#team {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    background-color: coral;
+    padding-bottom: 3rem;
+}
+
+.name {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#team img {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.person, .name {
+    background-color: coral;
+    padding: 1rem;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: grey;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    background-color: black;
+}
