@@ -11,6 +11,8 @@ html {
     padding: 0;
 }
 
+
+
 /* header*/
 
 header{
@@ -24,6 +26,22 @@ header img {
     padding: 2rem 15%;
     background-color: white;
     border: 2rem solid rgba(0, 0, 0, 0.664);
+}
+
+@keyframes bounceIn{
+    0% {
+        transform: scale(.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+header img {
+    animation: bounceIn 3s;
 }
 
 /* mission statement*/
@@ -73,13 +91,31 @@ header img {
 .services h2 {
     font-size: 2rem;
     background-color: orange;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .services img {
     width: 15rem;
     height: 15rem;
-    margin-top: 1rem;
+    transition: all 500ms; /*test*/
+    
+}
+ /*test area*/
+.services img:active {
+    scale: 3;
+    position: fixed;
+    z-index: 99;
+    left: 45%;
+    top: 30%;
+}
+
+ /*end test*/
+
+.img-container {
+    width: 15rem;
+    height: 15rem;
+    
 }
 
 .justservicepics {
@@ -92,18 +128,24 @@ header img {
     display: flex;
     font-size: 2rem;
     border: 2px solid black;
-    margin: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #tree-trimming, #tree-removal, #brush-cleanup, #stump-grinding {
     margin-top: 3rem;
 }
 
+.together p {
+    background-color: pink;
+    border: 1px solid black;
+}
+
 /* the team*/
 
 
 #teamsection {
-    background-color: ;
+   position: static;
 }
 
 #teamsection h2 {
@@ -137,6 +179,12 @@ header img {
     width: 15rem;
     height: 15rem;
     overflow: hidden;
+    transition: rotate 1s;
+}
+
+#team img:hover {
+    rotate: 360deg;
+    
 }
 
 .person, .name {
@@ -158,3 +206,8 @@ footer{
 footer p {
     background-color: black;
 }
+
+
+
+/*mess around area*/
+
